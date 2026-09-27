@@ -15,12 +15,12 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import messages from "../../../../messages/en.json";
-import { stats } from "@/lib/ps";
+import { getStats } from "@/lib/ps";
 import {
-  themeBySlug,
+  getThemeBySlug,
   themePs,
-  themes,
-  themeSlugs,
+  getThemes,
+  getThemeSlugs,
 } from "@/lib/routes";
 
 const SITE_URL =
@@ -48,7 +48,7 @@ function t(key: string, params?: Record<string, string | number>): string {
 }
 
 export async function generateStaticParams() {
-  const themes = await getThemes();
+  const themeBySlug = await getThemeBySlug();
   return Object.keys(themeBySlug).map((slug) => ({ slug }));
 }
 
@@ -58,6 +58,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const themeBySlug = await getThemeBySlug();
   const name = themeBySlug[slug];
   if (!name) return {};
   const ps = await themePs(name);
@@ -82,13 +83,19 @@ export default async function ThemePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const themeBySlug = await getThemeBySlug();
   const name = themeBySlug[slug];
   if (!name) notFound();
 
   const ps = await themePs(name);
   const software = ps.filter((p) => p.category === "Software").length;
   const hardware = ps.filter((p) => p.category === "Hardware").length;
+  const themes = await getThemes();
   const related = themes.filter((n) => n !== name).slice(0, 8);
+  const themeSlugs = await getThemeSlugs();
+  const stats = await getStats();
+  
+  const relatedCounts = await Promise.all(related.map(async (n) => ({ n, count: (await themePs(n)).length })));
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
@@ -163,7 +170,7 @@ export default async function ThemePage({
       <div className="space-y-3 border-t border-border/60 py-6">
         <h2 className="text-heading-16">{t("relatedThemes")}</h2>
         <div className="flex flex-wrap gap-2">
-          {related.map((n) => (
+          {relatedCounts.map(({n, count}) => (
             <Link
               key={n}
               href={`/themes/${themeSlugs[n]}`}
@@ -174,7 +181,7 @@ export default async function ThemePage({
               >
                 {n}
                 <span className="ml-1.5 font-mono text-[10px] text-muted-foreground">
-                  {(await themePs(n)).length}
+                  {count}
                 </span>
               </Badge>
             </Link>

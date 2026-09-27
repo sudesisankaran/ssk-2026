@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
 import messages from "../../../messages/en.json";
-import { stats } from "@/lib/ps";
+import { getStats } from "@/lib/ps";
 import { orgPs, getOrgs, getOrgSlugs } from "@/lib/routes";
 
 const SITE_URL =
@@ -29,6 +29,7 @@ function t(key: string, params?: Record<string, string | number>): string {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
+  const orgs = await getOrgs();
   return {
     title: `${t("breadcrumbOrgs")} - SSK 2026 Problem Statements`,
     description: t("orgsIndexDesc", { count: String(orgs.length) }),
@@ -39,6 +40,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function OrgsIndexPage() {
+  const orgs = await getOrgs();
+  const orgSlugs = await getOrgSlugs();
+  const stats = await getStats();
+  const orgCounts = await Promise.all(orgs.map(async (name) => ({ name, count: (await orgPs(name)).length })));
+
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6">
       <div className="space-y-3 border-b border-border/60 pb-6">
@@ -54,8 +60,7 @@ export default async function OrgsIndexPage() {
       </div>
 
       <div className="grid gap-2.5 py-6 sm:grid-cols-2 lg:grid-cols-3">
-        {orgs.map((name) => {
-          const count = (await orgPs(name)).length;
+        {orgCounts.map(({name, count}) => {
           return (
             <Link
               key={name}

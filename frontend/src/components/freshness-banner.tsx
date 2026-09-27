@@ -2,7 +2,7 @@ import { Information } from "@/components/icons/geist";
 import messages from "../../messages/en.json";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { problemStatements } from "@/lib/ps";
+import { getProblemStatements } from "@/lib/ps";
 
 function getNestedValue(obj: Record<string, unknown>, path: string): string {
   const keys = path.split(".");
@@ -24,6 +24,7 @@ function t(key: string, params?: Record<string, string | number>): string {
 }
 
 export async function FreshnessBanner() {
+  const problemStatements = await getProblemStatements();
   const scraped = problemStatements[0]?.scraped_at;
   if (!scraped) return null;
   return (

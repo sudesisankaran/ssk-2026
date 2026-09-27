@@ -326,7 +326,6 @@ export function Explorer({ problemStatements, stats }: { problemStatements: Prob
               toggleTheme={toggleTheme}
               onReset={reset}
               stats={stats}
-              stats={stats}
             />
           </div>
         </aside>
@@ -336,7 +335,6 @@ export function Explorer({ problemStatements, stats }: { problemStatements: Prob
             <CategoryTabs
               value={filters.categories}
               onChange={(v) => setFilter("categories", v)}
-              stats={stats}
               stats={stats}
             />
 
@@ -533,7 +531,6 @@ export function Explorer({ problemStatements, stats }: { problemStatements: Prob
                 reset();
                 setMobileOpen(false);
               }}
-              stats={stats}
               stats={stats}
             />
           </div>

@@ -15,12 +15,12 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import messages from "../../../../messages/en.json";
-import { stats } from "@/lib/ps";
+import { getStats } from "@/lib/ps";
 import {
-  orgBySlug,
+  getOrgBySlug,
   orgPs,
-  orgs,
-  orgSlugs,
+  getOrgs,
+  getOrgSlugs,
 } from "@/lib/routes";
 
 const SITE_URL =
@@ -48,7 +48,7 @@ function t(key: string, params?: Record<string, string | number>): string {
 }
 
 export async function generateStaticParams() {
-  const orgs = await getOrgs();
+  const orgBySlug = await getOrgBySlug();
   return Object.keys(orgBySlug).map((slug) => ({ slug }));
 }
 
@@ -58,6 +58,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const orgBySlug = await getOrgBySlug();
   const name = orgBySlug[slug];
   if (!name) return {};
   const ps = await orgPs(name);
@@ -82,13 +83,19 @@ export default async function OrgPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const orgBySlug = await getOrgBySlug();
   const name = orgBySlug[slug];
   if (!name) notFound();
 
   const ps = await orgPs(name);
   const software = ps.filter((p) => p.category === "Software").length;
   const hardware = ps.filter((p) => p.category === "Hardware").length;
+  const orgs = await getOrgs();
   const related = orgs.filter((n) => n !== name).slice(0, 8);
+  const orgSlugs = await getOrgSlugs();
+  const stats = await getStats();
+  
+  const relatedCounts = await Promise.all(related.map(async (n) => ({ n, count: (await orgPs(n)).length })));
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
@@ -163,7 +170,7 @@ export default async function OrgPage({
       <div className="space-y-3 border-t border-border/60 py-6">
         <h2 className="text-heading-16">{t("relatedOrgs")}</h2>
         <div className="flex flex-wrap gap-2">
-          {related.map((n) => (
+          {relatedCounts.map(({n, count}) => (
             <Link
               key={n}
               href={`/orgs/${orgSlugs[n]}`}
@@ -174,7 +181,7 @@ export default async function OrgPage({
               >
                 {n}
                 <span className="ml-1.5 font-mono text-[10px] text-muted-foreground">
-                  {(await orgPs(n)).length}
+                  {count}
                 </span>
               </Badge>
             </Link>

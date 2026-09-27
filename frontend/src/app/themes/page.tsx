@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
 import messages from "../../../messages/en.json";
-import { stats } from "@/lib/ps";
+import { getStats } from "@/lib/ps";
 import { themePs, getThemes, getThemeSlugs } from "@/lib/routes";
 
 const SITE_URL =
@@ -29,6 +29,7 @@ function t(key: string, params?: Record<string, string | number>): string {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
+  const themes = await getThemes();
   return {
     title: `${t("breadcrumbThemes")} - SSK 2026 Problem Statements`,
     description: t("themesIndexDesc", { count: String(themes.length) }),
@@ -39,6 +40,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ThemesIndexPage() {
+  const themes = await getThemes();
+  const themeSlugs = await getThemeSlugs();
+  const stats = await getStats();
+  const themeCounts = await Promise.all(themes.map(async (name) => ({ name, count: (await themePs(name)).length })));
+
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6">
       <div className="space-y-3 border-b border-border/60 pb-6">
@@ -54,8 +60,7 @@ export default async function ThemesIndexPage() {
       </div>
 
       <div className="grid gap-2.5 py-6 sm:grid-cols-2 lg:grid-cols-3">
-        {themes.map((name) => {
-          const count = (await themePs(name)).length;
+        {themeCounts.map(({name, count}) => {
           return (
             <Link
               key={name}

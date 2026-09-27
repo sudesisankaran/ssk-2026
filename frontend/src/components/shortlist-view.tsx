@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "@/components/messages-provider";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { toast } from "sonner";
 
 import { Cross, FloppyDisk, Star } from "@/components/icons/geist";
@@ -14,17 +14,23 @@ import { Spinner } from "@/components/ui/spinner";
 import { useMounted } from "@/hooks/use-local-storage";
 import { useShortlist } from "@/hooks/use-shortlist";
 import Link from "next/link";
-import { psMarkdown, problemStatements } from "@/lib/ps";
+import { psMarkdown, getProblemStatements, type ProblemStatement } from "@/lib/ps";
 
 export function ShortlistView() {
   const { shortlisted, clear } = useShortlist();
   const mounted = useMounted();
   const t = useTranslations("shortlist");
 
+  const [problemStatements, setProblemStatements] = useState<ProblemStatement[]>([]);
+
+  useEffect(() => {
+    getProblemStatements().then(setProblemStatements);
+  }, []);
+
   const items = useMemo(
     () =>
       problemStatements.filter((ps) => shortlisted.has(ps.ps_number)),
-    [shortlisted],
+    [shortlisted, problemStatements],
   );
 
   if (!mounted) {
