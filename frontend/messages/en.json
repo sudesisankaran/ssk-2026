@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "SSK 2026 Problem Statements - Browse All 428",
+    "titleTemplate": "%s | SSK 2026 Problem Statements",
+    "description": "Search, filter and shortlist all 428 ssk Innovathon 2026 problem statements. Filter by theme, category, organization and dataset availability."
+  },
+  "header": {
+    "brand": "ssk Innovathon",
+    "brandSub": "Problem Statements",
+    "search": "Search problem statements…",
+    "shortlist": "Shortlist",
+    "version": "v2026.1",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System",
+    "themeToggle": "Toggle theme"
+  },
+  "hero": {
+    "badgeLive": "SSK 2026 Official Database",
+    "badgeAll": "All 428 Statements",
+    "title": "ssk Innovathon 2026 Problem Statements",
+    "subtitle": "Explore, filter, search and shortlist all {total} problem statements - with fast keyboard search and instant insights.",
+    "pillTotal": "total",
+    "pillSoftware": "software",
+    "pillHardware": "hardware",
+    "pillOrgs": "organizations",
+    "searchPlaceholder": "Search by title, theme, organization or PS number (e.g. SSK26001)…",
+    "searchAria": "Search problem statements",
+    "searchLoading": "Loading search…"
+  },
+  "search": {
+    "problemStatements": "Problem Statements ({count})",
+    "recentSearches": "Recent Searches",
+    "searchAll": "Search all {total} statements for “{query}”",
+    "clear": "Clear search"
+  },
+  "explorer": {
+    "tabAll": "All ({count})",
+    "tabSoftware": "Software ({count})",
+    "tabHardware": "Hardware ({count})",
+    "filterLabel": "Filters",
+    "filterDesc": "Refine the list of problem statements.",
+    "orgFilter": "Organization",
+    "allOrgs": "All organizations ({count})",
+    "themesLabel": "Themes ({count})",
+    "onlyDataset": "Has attached dataset",
+    "sortBy": "Sort by",
+    "sortSno": "Statement ID (Ascending)",
+    "sortTitle": "Title (A-Z)",
+    "sortTheme": "Theme Name",
+    "sortOrg": "Organization",
+    "sortDeadline": "Submission Deadline",
+    "reset": "Reset all filters",
+    "activeBadge": "active",
+    "totalBadge": "total",
+    "selected": "selected",
+    "searchThemes": "Search themes...",
+    "noThemes": "No themes found",
+    "showingCount": "of {totalAll} statements",
+    "viewGrid": "Grid view",
+    "viewList": "List view",
+    "activeThemes": "Active Themes:",
+    "noResultsTitle": "No problem statements match your criteria",
+    "noResultsDesc": "Try adjusting your search terms or clearing specific filters.",
+    "clearFilters": "Clear all filters",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "pageInfo": "Showing {shown} of {total} statements"
+  },
+  "card": {
+    "dataset": "Dataset",
+    "deadline": "Deadline: {deadline}",
+    "ideas": "{ideas} ideas"
+  },
+  "countdown": {
+    "dueToday": "Due today",
+    "dueTomorrow": "Due tomorrow",
+    "dueIn": "Due in {days} days",
+    "passed": "Deadline passed"
+  },
+  "detail": {
+    "breadcrumbAll": "All Statements",
+    "metadata": "Metadata & Specs",
+    "labelOrg": "Organization",
+    "labelDept": "Department",
+    "labelCategory": "Category",
+    "labelTheme": "Theme",
+    "labelDeadline": "Deadline",
+    "labelIdeas": "Submitted ideas",
+    "openOnSih": "Open on ssk.gov.in",
+    "viewDataset": "View attached dataset",
+    "contact": "Contact: {contact}",
+    "quickNav": "Quick Navigation",
+    "prev": "Prev",
+    "next": "Next",
+    "description": "Problem Description & Statement Details",
+    "similarTitle": "Similar Problem Statements",
+    "similarSub": "Same Theme or Organization",
+    "noData": "N/A",
+    "footerOrg": "{org} · {category} · Deadline {deadline}"
+  },
+  "shortlist": {
+    "title": "My shortlist",
+    "subtitle": "Saved statements are stored only in your browser. Use this to pick your team's final candidates before the deadline.",
+    "emptyTitle": "Nothing shortlisted yet",
+    "emptyDesc": "Browse the problem statements and tap the bookmark on any card to add it here.",
+    "browse": "Browse statements",
+    "exportCsv": "Export CSV",
+    "copyMarkdown": "Copy Markdown",
+    "clear": "Clear all",
+    "loading": "Loading shortlist data…",
+    "count": "{count} {count, plural, one {statement} other {statements}}",
+    "exported": "Shortlist exported as CSV",
+    "copied": "Shortlist copied as Markdown",
+    "shareWhatsapp": "Share shortlist on WhatsApp"
+  },
+  "stats": {
+    "title": "Database Overview & Metrics",
+    "totalCard": "Total Problem Statements",
+    "softwareCard": "Software Category",
+    "hardwareCard": "Hardware Category",
+    "orgsCard": "Participating Orgs",
+    "totalSub": "ssk Innovathon 2026",
+    "softwareSub": "{percent}% of all statements",
+    "hardwareSub": "{percent}% of all statements",
+    "orgsSub": "Ministries & Departments",
+    "themesCard": "Top Theme Domains",
+    "orgsCard2": "Top Submitting Organizations",
+    "distribution": "Distribution",
+    "count": "Count"
+  },
+  "banner": {
+    "title": "Verified Database Snapshot",
+    "desc": "Deadlines and idea counts reflect official ssk.gov.in records. Always verify final guidelines on the official portal prior to team submission."
+  },
+  "footer": {
+    "brand": "SSK 2026 Problem Statements",
+    "desc": "Community-maintained archive of all {count} <link>problem statements</link> published by ssk Innovathon. Content: CC-BY-4.0 · Code: MIT.",
+    "pillTotal": "total",
+    "pillSoftware": "software",
+    "pillHardware": "hardware",
+    "browse": "Browse",
+    "allStatements": "All statements",
+    "themes": "Themes",
+    "orgs": "Organizations",
+    "disclaimer": "Unofficial community archive - not affiliated with ssk Innovathon or the Government of India.",
+    "madeBy": "Made by <author>vedantchalke36</author> with love"
+  },
+  "notFound": {
+    "title": "Problem statement not found",
+    "desc": "This statement does not exist or has been removed from the archive.",
+    "back": "Browse all statements"
+  },
+  "palette": {
+    "placeholder": "Search 428 problem statements, themes, organizations…",
+    "noResults": "No problem statement found.",
+    "resultsFor": "Results for “{query}”",
+    "searchAll": "Search all {total} statements for “{query}”",
+    "jumpTo": "Jump to",
+    "home": "All problem statements",
+    "shortlist": "My shortlist",
+    "recent": "Recent searches",
+    "themes": "Browse themes"
+  },
+  "notes": {
+    "title": "Private notes · {id}",
+    "placeholder": "Key requirements, ideas, links, contacts - stored only in your browser…",
+    "clear": "Clear",
+    "save": "Save note",
+    "saved": "Notes saved",
+    "cleared": "Notes cleared"
+  },
+  "share": {
+    "trigger": "Share",
+    "label": "Share {id}",
+    "copyLink": "Copy link",
+    "copyMarkdown": "Copy as Markdown",
+    "whatsapp": "Share on WhatsApp",
+    "telegram": "Share on Telegram",
+    "x": "Post on X",
+    "linkCopied": "Link copied",
+    "copied": "Problem statement copied as Markdown",
+    "error": "Could not copy to clipboard"
+  },
+  "copyPs": {
+    "label": "Copy as Markdown",
+    "copy": "Copy",
+    "copied": "Copied",
+    "success": "{id} copied as Markdown",
+    "error": "Could not copy to clipboard"
+  },
+  "openInChat": {
+    "label": "Open in chat",
+    "aria": "Open problem statement in a chat",
+    "menuLabel": "Open with problem statement"
+  },
+  "shortlistBtn": {
+    "add": "Add to shortlist",
+    "remove": "Remove from shortlist"
+  },
+  "landing": {
+    "breadcrumbAll": "All Statements",
+    "breadcrumbThemes": "Themes",
+    "breadcrumbOrgs": "Organizations",
+    "statementsCount": "{count} problem statements",
+    "themeDesc": "{count} problem statements in the {theme} theme for ssk Innovathon 2026 - {software} software and {hardware} hardware.",
+    "orgDesc": "{count} problem statements submitted by {org} for ssk Innovathon 2026 - {software} software and {hardware} hardware.",
+    "relatedThemes": "Explore other themes",
+    "relatedOrgs": "Other organizations",
+    "viewAll": "View all statements",
+    "software": "software",
+    "hardware": "hardware",
+    "themesIndexDesc": "Browse all {count} SSK 2026 themes, from agriculture to smart automation, with every problem statement organized by theme.",
+    "orgsIndexDesc": "Browse all {count} ministries and organizations submitting SSK 2026 problem statements, with every statement organized by organization."
+  }
+}

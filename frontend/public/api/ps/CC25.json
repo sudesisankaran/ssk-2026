@@ -1,0 +1,17 @@
+{
+  "sno": 1024,
+  "ps_number": "CC25",
+  "title": "The technological solutions for capturing AQI values through mobile and other forms of stations",
+  "org": "MITS-DU",
+  "department": "",
+  "category": "Software",
+  "theme": "Clean & Green Technology",
+  "deadline": "N/A",
+  "deadline_date": null,
+  "ideas": "0",
+  "dataset_link": "",
+  "contact": "",
+  "youtube": "",
+  "description": "DPCC is using different stations at fixed sites for measurement of AQI and other pollution parameters. These fixed stations suffered from various limitations and generally do not give representative values e.g. station located near an industrial area will give higher readings due to proximity to such industrial area which may not be representative of the wider area. Similarly, a temporary construction site/activity near these fixed sites give higher pollution readings due to local reasons. The technological solutions may be required for capturing AQI values through mobile and other forms of stations. Drone would be one of the options where they can record real-time pollution parameters through on-board sensors.",
+  "scraped_at": "2026-09-26"
+}

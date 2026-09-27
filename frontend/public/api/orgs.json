@@ -1,0 +1,820 @@
+[
+  {
+    "org": "MITS-DU",
+    "count": 81,
+    "ps_numbers": [
+      "CC1",
+      "CC2",
+      "CC3",
+      "CC4",
+      "CC5",
+      "CC6",
+      "CC7",
+      "CC8",
+      "CC9",
+      "CC10",
+      "CC11",
+      "CC12",
+      "CC13",
+      "CC14",
+      "CC15",
+      "CC16",
+      "CC17",
+      "CC18",
+      "CC19",
+      "CC20",
+      "CC21",
+      "CC22",
+      "CC23",
+      "CC24",
+      "CC25",
+      "CC26",
+      "CC27",
+      "CC28",
+      "CC29",
+      "CC30",
+      "CC31",
+      "CC32",
+      "CC33",
+      "CC34",
+      "CC35",
+      "CC36",
+      "CC37",
+      "CC38",
+      "CC39",
+      "CC40",
+      "CC41",
+      "CC42",
+      "CC43",
+      "CC44",
+      "CC45",
+      "CC46",
+      "CC47",
+      "CC48",
+      "CC49",
+      "CC50",
+      "CC51",
+      "CC52",
+      "CC53",
+      "CC54",
+      "CC55",
+      "CC56",
+      "CC57",
+      "CC58",
+      "CC59",
+      "CC60",
+      "CC61",
+      "CC62",
+      "CC63",
+      "CC64",
+      "CC65",
+      "CC66",
+      "CC67",
+      "CC68",
+      "CC69",
+      "CC70",
+      "CC71",
+      "CC72",
+      "CC73",
+      "CC74",
+      "CC75",
+      "CC76",
+      "CC77",
+      "CC78",
+      "CC79",
+      "CC80",
+      "CC81"
+    ]
+  },
+  {
+    "org": "National Technical Research Organisation (NTRO)",
+    "count": 33,
+    "ps_numbers": [
+      "SSK26142",
+      "SSK26143",
+      "SSK26145",
+      "SSK26146",
+      "SSK26147",
+      "SSK26148",
+      "SSK26149",
+      "SSK26150",
+      "SSK26151",
+      "SSK26152",
+      "SSK26153",
+      "SSK26154",
+      "SSK26155",
+      "SSK26156",
+      "SSK26157",
+      "SSK26158",
+      "SSK26159",
+      "SSK26160",
+      "SSK26161",
+      "SSK26162",
+      "SSK26163",
+      "SSK26164",
+      "SSK1686",
+      "SSK1685",
+      "SSK1684",
+      "SSK1683",
+      "SSK1682",
+      "SSK1681",
+      "SSK1680",
+      "SSK1679",
+      "SSK1678",
+      "SSK1677",
+      "SSK1676"
+    ]
+  },
+  {
+    "org": "Ministry of Earth Sciences (MoES)",
+    "count": 27,
+    "ps_numbers": [
+      "SSK26057",
+      "SSK26059",
+      "SSK26060",
+      "SSK26061",
+      "SSK26062",
+      "SSK26063",
+      "SSK26066",
+      "SSK26067",
+      "SSK26068",
+      "SSK26069",
+      "SSK26070",
+      "SSK26071",
+      "SSK26072",
+      "SSK26073",
+      "SSK26074",
+      "SSK26075",
+      "SSK26076",
+      "SSK26077",
+      "SSK26078",
+      "SSK26079",
+      "SSK26080",
+      "SSK26081",
+      "SSK26082",
+      "SSK26083",
+      "SSK26084",
+      "SSK26085",
+      "SSK26086"
+    ]
+  },
+  {
+    "org": "AICTE",
+    "count": 21,
+    "ps_numbers": [
+      "SSK26193",
+      "SSK26194",
+      "SSK26195",
+      "SSK26196",
+      "SSK26197",
+      "SSK26198",
+      "SSK26199",
+      "SSK26200",
+      "SSK26201",
+      "SSK26202",
+      "SSK26203",
+      "SSK26204",
+      "SSK26205",
+      "SSK26206",
+      "SSK26207",
+      "SSK26208",
+      "SSK26209",
+      "SSK1730",
+      "SSK1729",
+      "SSK1728",
+      "0"
+    ]
+  },
+  {
+    "org": "AICTE, MIC- Student Innovation",
+    "count": 17,
+    "ps_numbers": [
+      "SSK1602",
+      "SSK1601",
+      "SSK1600",
+      "SSK1599",
+      "SSK1598",
+      "SSK1597",
+      "SSK1596",
+      "SSK1595",
+      "SSK1594",
+      "SSK1593",
+      "SSK1592",
+      "SSK1591",
+      "SSK1590",
+      "SSK1589",
+      "SSK1588",
+      "SSK1587",
+      "SSK1586"
+    ]
+  },
+  {
+    "org": "Government of NCT of Delhi",
+    "count": 16,
+    "ps_numbers": [
+      "SSK1627",
+      "SSK1626",
+      "SSK1625",
+      "SSK1624",
+      "SSK1623",
+      "SSK1622",
+      "SSK1621",
+      "SSK1620",
+      "SSK1619",
+      "SSK1618",
+      "SSK1617",
+      "SSK1616",
+      "SSK1615",
+      "SSK1614",
+      "SSK1613",
+      "SSK1612"
+    ]
+  },
+  {
+    "org": "Ministry of Home Affairs",
+    "count": 11,
+    "ps_numbers": [
+      "SSK26182",
+      "SSK26183",
+      "SSK26184",
+      "SSK26186",
+      "SSK26187",
+      "SSK26188",
+      "SSK26189",
+      "SSK26190",
+      "SSK26191",
+      "SSK26192",
+      "SSK26231"
+    ]
+  },
+  {
+    "org": "Ministry of Communication",
+    "count": 11,
+    "ps_numbers": [
+      "SSK1762",
+      "SSK1761",
+      "SSK1760",
+      "SSK1759",
+      "SSK1758",
+      "SSK1757",
+      "SSK1756",
+      "SSK1754",
+      "SSK1753",
+      "SSK1752",
+      "SSK1751"
+    ]
+  },
+  {
+    "org": "Ministry of Jal Shakti",
+    "count": 11,
+    "ps_numbers": [
+      "SSK1698",
+      "SSK1697",
+      "SSK1696",
+      "SSK1695",
+      "SSK1694",
+      "SSK1693",
+      "SSK1692",
+      "SSK1691",
+      "SSK1690",
+      "SSK1689",
+      "SSK1688"
+    ]
+  },
+  {
+    "org": "Indian Space Research Organisation(ISRO)",
+    "count": 10,
+    "ps_numbers": [
+      "SSK26166",
+      "SSK26167",
+      "SSK26168",
+      "SSK26169",
+      "SSK26170",
+      "SSK26171",
+      "SSK26173",
+      "SSK26174",
+      "SSK26175",
+      "SSK26176"
+    ]
+  },
+  {
+    "org": "Indian Space Research Organization (ISRO)",
+    "count": 10,
+    "ps_numbers": [
+      "SSK1741",
+      "SSK1740",
+      "SSK1739",
+      "SSK1738",
+      "SSK1737",
+      "SSK1736",
+      "SSK1735",
+      "SSK1734",
+      "SSK1733",
+      "SSK1732"
+    ]
+  },
+  {
+    "org": "Ministry of Rural Development",
+    "count": 9,
+    "ps_numbers": [
+      "SSK26011",
+      "SSK26012",
+      "SSK26013",
+      "SSK26014",
+      "SSK26015",
+      "SSK26016",
+      "SSK26017",
+      "SSK26018",
+      "SSK26019"
+    ]
+  },
+  {
+    "org": "Government Of Maharashtra",
+    "count": 9,
+    "ps_numbers": [
+      "SSK26128",
+      "SSK26129",
+      "SSK26130",
+      "SSK26131",
+      "SSK26132",
+      "SSK26133",
+      "SSK26134",
+      "SSK26135",
+      "SSK26136"
+    ]
+  },
+  {
+    "org": "Ministry of Consumer Affairs, Food & Public Distribution",
+    "count": 8,
+    "ps_numbers": [
+      "SSK26031",
+      "SSK26032",
+      "SSK26033",
+      "SSK26034",
+      "SSK26035",
+      "SSK26036",
+      "SSK26107",
+      "SSK26108"
+    ]
+  },
+  {
+    "org": "Ministry of Social Justice and Empowerment",
+    "count": 8,
+    "ps_numbers": [
+      "SSK1719",
+      "SSK1718",
+      "SSK1717",
+      "SSK1716",
+      "SSK1715",
+      "SSK1714",
+      "SSK1713",
+      "SSK1712"
+    ]
+  },
+  {
+    "org": "Ministry of Social Justice and Empowerment (MoSJE)",
+    "count": 7,
+    "ps_numbers": [
+      "SSK26090",
+      "SSK26091",
+      "SSK26092",
+      "SSK26093",
+      "SSK26094",
+      "SSK26095",
+      "SSK26097"
+    ]
+  },
+  {
+    "org": "National Critical Information Infrastructure Protection Center (NCIIPC)",
+    "count": 6,
+    "ps_numbers": [
+      "SSK1750",
+      "SSK1749",
+      "SSK1748",
+      "SSK1747",
+      "SSK1746",
+      "SSK1745"
+    ]
+  },
+  {
+    "org": "Ministry of Earth Sciences",
+    "count": 6,
+    "ps_numbers": [
+      "SSK1660",
+      "SSK1659",
+      "SSK1658",
+      "SSK1657",
+      "SSK1656",
+      "SSK1655"
+    ]
+  },
+  {
+    "org": "Ministry of Defence",
+    "count": 6,
+    "ps_numbers": [
+      "SSK1654",
+      "SSK1653",
+      "SSK1652",
+      "SSK1651",
+      "SSK1650",
+      "SSK1649"
+    ]
+  },
+  {
+    "org": "Ministry of Coal",
+    "count": 5,
+    "ps_numbers": [
+      "SSK26023",
+      "SSK26024",
+      "SSK1646",
+      "SSK1645",
+      "SSK1644"
+    ]
+  },
+  {
+    "org": "Bharat Electronics Limited",
+    "count": 5,
+    "ps_numbers": [
+      "SSK26123",
+      "SSK26124",
+      "SSK26125",
+      "SSK26126",
+      "SSK26127"
+    ]
+  },
+  {
+    "org": "Egreen Quanta",
+    "count": 5,
+    "ps_numbers": [
+      "SSK26137",
+      "SSK26138",
+      "SSK26139",
+      "SSK26140",
+      "SSK26141"
+    ]
+  },
+  {
+    "org": "Ministry of Education",
+    "count": 5,
+    "ps_numbers": [
+      "SSK1742",
+      "SSK1667",
+      "SSK1666",
+      "SSK1664",
+      "SSK1661"
+    ]
+  },
+  {
+    "org": "Ministry of Law & Justice",
+    "count": 5,
+    "ps_numbers": [
+      "SSK1703",
+      "SSK1702",
+      "SSK1701",
+      "SSK1700",
+      "SSK1699"
+    ]
+  },
+  {
+    "org": "Ministry of Electronics and Information Technology",
+    "count": 5,
+    "ps_numbers": [
+      "SSK1672",
+      "SSK1671",
+      "SSK1670",
+      "SSK1669",
+      "SSK1668"
+    ]
+  },
+  {
+    "org": "Ministry of Ayush",
+    "count": 4,
+    "ps_numbers": [
+      "SSK26044",
+      "SSK26045",
+      "SSK26046",
+      "SSK26047"
+    ]
+  },
+  {
+    "org": "DRDO",
+    "count": 4,
+    "ps_numbers": [
+      "SSK26051",
+      "SSK26053",
+      "SSK26054",
+      "SSK26055"
+    ]
+  },
+  {
+    "org": "MoSPI",
+    "count": 4,
+    "ps_numbers": [
+      "SSK26056",
+      "SSK26101",
+      "SSK26102",
+      "SSK26103"
+    ]
+  },
+  {
+    "org": "Autodesk",
+    "count": 4,
+    "ps_numbers": [
+      "SSK26114",
+      "SSK26115",
+      "SSK26116",
+      "SSK1603"
+    ]
+  },
+  {
+    "org": "Oil India Limited",
+    "count": 4,
+    "ps_numbers": [
+      "SSK26120",
+      "SSK26121",
+      "SSK26122",
+      "SSK26165"
+    ]
+  },
+  {
+    "org": "Ministry of Housing and Urban Affairs",
+    "count": 4,
+    "ps_numbers": [
+      "SSK1727",
+      "SSK1726",
+      "SSK1725",
+      "SSK1724"
+    ]
+  },
+  {
+    "org": "Ministry of Agriculture and Farmers Welfare",
+    "count": 4,
+    "ps_numbers": [
+      "SSK1640",
+      "SSK1639",
+      "SSK1638",
+      "SSK1637"
+    ]
+  },
+  {
+    "org": "Ministry of Development of North Eastern Region (MDoNER)",
+    "count": 3,
+    "ps_numbers": [
+      "SSK26001",
+      "SSK26002",
+      "SSK26003"
+    ]
+  },
+  {
+    "org": "Government of Jharkhand",
+    "count": 3,
+    "ps_numbers": [
+      "SSK26041",
+      "SSK26042",
+      "SSK26043"
+    ]
+  },
+  {
+    "org": "All India Council for Technical Education (Cyber Security Cell)",
+    "count": 3,
+    "ps_numbers": [
+      "SSK26104",
+      "SSK26105",
+      "SSK26106"
+    ]
+  },
+  {
+    "org": "Ministry of Youth Affairs & Sports",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1722",
+      "SSK1721",
+      "SSK1720"
+    ]
+  },
+  {
+    "org": "GAIL, Ministry of Petroleum and Natural Gas",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1708",
+      "SSK1707",
+      "SSK1706"
+    ]
+  },
+  {
+    "org": "Ministry of AYUSH",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1643",
+      "SSK1642",
+      "SSK1641"
+    ]
+  },
+  {
+    "org": "Government of Rajasthan",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1633",
+      "SSK1632",
+      "SSK1631"
+    ]
+  },
+  {
+    "org": "Government of Punjab",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1630",
+      "SSK1629",
+      "SSK1628"
+    ]
+  },
+  {
+    "org": "Government of Gujarat",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1610",
+      "SSK1609",
+      "SSK1608"
+    ]
+  },
+  {
+    "org": "Bharat Electronics Limited (BEL)",
+    "count": 3,
+    "ps_numbers": [
+      "SSK1606",
+      "SSK1605",
+      "SSK1604"
+    ]
+  },
+  {
+    "org": "Ministry of Steel",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26006",
+      "SSK26009"
+    ]
+  },
+  {
+    "org": "Ministry of Railways",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26027",
+      "SSK26028"
+    ]
+  },
+  {
+    "org": "MathWorks",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26037",
+      "SSK26038"
+    ]
+  },
+  {
+    "org": "Ministry of Petroleum & Natural Gas",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26099",
+      "SSK26100"
+    ]
+  },
+  {
+    "org": "Mangalore Refinery and Petrochemicals Limited (MRPL)",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26117",
+      "SSK26119"
+    ]
+  },
+  {
+    "org": "Ministry of defence (MoD)",
+    "count": 2,
+    "ps_numbers": [
+      "SSK26227",
+      "SSK26228"
+    ]
+  },
+  {
+    "org": "National Investigation Agency (NIA)",
+    "count": 2,
+    "ps_numbers": [
+      "SSK1744",
+      "SSK1743"
+    ]
+  },
+  {
+    "org": "Ministry of Railway",
+    "count": 2,
+    "ps_numbers": [
+      "SSK1711",
+      "SSK1710"
+    ]
+  },
+  {
+    "org": "Ministry of Panchayati Raj",
+    "count": 2,
+    "ps_numbers": [
+      "SSK1705",
+      "SSK1704"
+    ]
+  },
+  {
+    "org": "Narcotics Control Bureau (NCB)",
+    "count": 2,
+    "ps_numbers": [
+      "SSK1675",
+      "SSK1674"
+    ]
+  },
+  {
+    "org": "Ministry of MSME",
+    "count": 1,
+    "ps_numbers": [
+      "SSK26021"
+    ]
+  },
+  {
+    "org": "Ministry of Cooperation",
+    "count": 1,
+    "ps_numbers": [
+      "SSK26089"
+    ]
+  },
+  {
+    "org": "Ministry of Fisheries, Animal Husbandry & Dairying",
+    "count": 1,
+    "ps_numbers": [
+      "SSK26111"
+    ]
+  },
+  {
+    "org": "Ministry of Mines (MoM)",
+    "count": 1,
+    "ps_numbers": [
+      "SSK26229"
+    ]
+  },
+  {
+    "org": "MathWorks India Private Limited",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1731"
+    ]
+  },
+  {
+    "org": "National Aluminium Company Limited (NALCO)",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1723"
+    ]
+  },
+  {
+    "org": "Ministry of Power",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1709"
+    ]
+  },
+  {
+    "org": "Ministry of Home Affairs, The National Disaster Response Force (NDRF)",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1687"
+    ]
+  },
+  {
+    "org": "Ministry of Fisheries, Animal Husbandry and Dairying",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1673"
+    ]
+  },
+  {
+    "org": "Ministry of Culture",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1648"
+    ]
+  },
+  {
+    "org": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1647"
+    ]
+  },
+  {
+    "org": "Department of Science and Technology",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1607"
+    ]
+  },
+  {
+    "org": "Godrej Appliances",
+    "count": 1,
+    "ps_numbers": [
+      "SSK1525"
+    ]
+  }
+]

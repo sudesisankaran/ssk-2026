@@ -1,0 +1,17 @@
+{
+  "sno": 1065,
+  "ps_number": "CC66",
+  "title": "Monitoring System for classroom session in skill training programe",
+  "org": "MITS-DU",
+  "department": "",
+  "category": "Software",
+  "theme": "Smart Education",
+  "deadline": "N/A",
+  "deadline_date": null,
+  "ideas": "0",
+  "dataset_link": "",
+  "contact": "",
+  "youtube": "",
+  "description": "Background: In the context of the skill development training program, there is a need to establish a robust automated monitoring system to assess and enhance effectiveness of classroom training so as early detection of below average training institutions can be done. Description: The above problem requires a system capable of analyzing classroom images thus can help identify the types of activites and interactions taking place during training sessions. Undestanding these activites can shed light on the quality and relevance of the training content. A dataset consisting of classroom pictures can be provided for various job roles along with course curriculam, infra requirements etc required for the skill development training programme. Expected Solution: System should be able to analyze the images and flag cases which need enhanced monitoring or cancellation.",
+  "scraped_at": "2026-09-26"
+}

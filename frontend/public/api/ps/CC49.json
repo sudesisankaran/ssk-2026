@@ -1,0 +1,17 @@
+{
+  "sno": 1048,
+  "ps_number": "CC49",
+  "title": "Publications summary generator for faculty members profile building",
+  "org": "MITS-DU",
+  "department": "",
+  "category": "Software",
+  "theme": "Smart Education",
+  "deadline": "N/A",
+  "deadline_date": null,
+  "ideas": "0",
+  "dataset_link": "",
+  "contact": "",
+  "youtube": "",
+  "description": "Description: 1. Background: For a much simplified and initial solution, input (publication record) can also be provided in a consolidated single bibtex file. However, it is desirable to provide input as an excel sheet, as mentioned earlier. 2. Description: The proposed solution should be able to crawl different popular academic databases, like Google Scholar, DBLP, etc. Often it is desired to have a publication record in a specific period for submission to various accrediting agencies by HEI's; therefore solution may have a provision for such customized queries. Expected solutions: The desired solution is required for generating publication summary for faculty profile showcase. Following are the identified inputs and expected outcomes Input: 1. Faculty names as mentioned in their respective academic profile (research papers) in an excel sheet 2. Year-wise publication record in journals which is exportable in words and excel 3. Year-wise publication record in conferences which is exportable in words and excel 4. Customized publication records in a particular duration",
+  "scraped_at": "2026-09-26"
+}

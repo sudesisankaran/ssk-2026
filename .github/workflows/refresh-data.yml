@@ -1,0 +1,80 @@
+name: Refresh SSK 2026 Data
+
+on:
+  schedule:
+    # Runs every 24 hours at 22:30 UTC (04:00 IST)
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Run scraper
+        id: scrape
+        run: |
+          set +e
+          python scripts/scrape_ssk.py
+          code=$?
+          if [ $code -ne 0 ]; then
+            echo "scrape_failed=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::Scraper failed with exit code $code - likely transient network issue, will retry on next schedule."
+            exit 0
+          fi
+          echo "scrape_failed=false" >> "$GITHUB_OUTPUT"
+
+      - name: Validate artifacts
+        if: steps.scrape.outputs.scrape_failed != 'true'
+        run: python scripts/scrape_ssk.py --validate
+
+      - name: Check for changes
+        id: changes
+        if: steps.scrape.outputs.scrape_failed != 'true'
+        run: |
+          if git diff --quiet; then
+            echo "No changes to problem statement data."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Problem statement data changed."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.scrape.outputs.scrape_failed != 'true' && steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(data): refresh SSK 2026 problem statements"
+          git push
+
+      - name: Report summary
+        if: always()
+        run: |
+          if [ "${{ steps.scrape.outputs.scrape_failed }}" = "true" ]; then
+            echo "Scrape failed - no data update attempted. Check logs for network errors. Next retry is on next schedule/manual trigger."
+          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "Data refreshed and pushed. Deploy workflow will publish to Cloudflare Pages."
+          else
+            echo "Data is up to date. No changes to commit."
+          fi

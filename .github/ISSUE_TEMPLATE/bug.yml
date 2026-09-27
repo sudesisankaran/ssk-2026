@@ -1,0 +1,33 @@
+name: Data correction
+description: Report incorrect, missing, or outdated problem statement data
+title: "[Data] <problem statement number or topic>"
+labels: ["data", "bug"]
+body:
+  - type: input
+    id: ps_number
+    attributes:
+      label: Problem statement number
+      description: e.g. SSK26001, or "multiple" if it affects several
+    validations:
+      required: true
+  - type: textarea
+    id: what_is_wrong
+    attributes:
+      label: What is wrong or missing?
+      description: Describe the incorrect field (deadline, idea counts, dataset link, title, description, etc.) and what it should be.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / reference
+      description: Link to the official page on ssk.gov.in or the official PDF where the correct value can be verified.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I verified this against the official ssk.gov.in portal
+          required: true

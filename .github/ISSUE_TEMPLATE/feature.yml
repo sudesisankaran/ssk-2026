@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement to the dataset, scraper, or web app
+title: "[Feature] <short description>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to add or improve?
+      description: Describe the feature and why it is useful for SSK participants.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested approach
+      description: Any implementation ideas, references, or examples.
+  - type: checkboxes
+    id: areas
+    attributes:
+      label: Area
+      options:
+        - label: Web app (search, filters, UI)
+        - label: Dataset / scraper
+        - label: Documentation
+        - label: CI / automation

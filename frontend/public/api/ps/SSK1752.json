@@ -1,0 +1,17 @@
+{
+  "sno": 220,
+  "ps_number": "SSK1752",
+  "title": "Measurement and Monitoring of Counter Services",
+  "org": "Ministry of Communication",
+  "department": "",
+  "category": "Software",
+  "theme": "Smart Automation",
+  "deadline": "N/A",
+  "deadline_date": null,
+  "ideas": "0",
+  "dataset_link": "",
+  "contact": "",
+  "youtube": "",
+  "description": "Develop a simple to use application for measurement and monitoring of counter services offered by Post Offices for their customers while providing ease of access to mail, parcel, financial, payment, insurance and citizen centric services from each Post Office. The solution suggested should integrate traditional and modern Industry 4.0 Technology based solution to this fundamental challenge faced by the DoP across its vast network. Integrating AI-powered image processing technology for effective monitoring of smooth, hassle free and efficient counter services based on live feed of customer service areas for a delightful customer experience are expected as a solution. Ease of application of the solution in the practical setting is key to the assessment criteria for this problem. The dashboard needs to be accessible at the Post Office and to its higher offices in the chain upto Divisional and Regional Office",
+  "scraped_at": "2026-09-26"
+}

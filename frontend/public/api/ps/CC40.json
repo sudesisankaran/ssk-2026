@@ -1,0 +1,17 @@
+{
+  "sno": 1039,
+  "ps_number": "CC40",
+  "title": "Software for Speech Language Therapy Clinical Services",
+  "org": "MITS-DU",
+  "department": "",
+  "category": "Software",
+  "theme": "MedTech / BioTech / HealthTech",
+  "deadline": "N/A",
+  "deadline_date": null,
+  "ideas": "0",
+  "dataset_link": "",
+  "contact": "",
+  "youtube": "",
+  "description": "Background: The rehabilitation institutes involved in this activity face high therapy cases load and more number of student therapists with less number of therapy supervisors. Following this system in manual mode impedes providing prompt services. Description: Clinical services with respect to speech language therapy begins with patient allocation to the therapist. The therapist then prepares therapy plan with goals and activities. The respective case supervisor needs to check the therapy plan and provide the inputs for further continuation of regular therapy sessions. At least post ten therapy sessions the therapist writes the progress report of the therapy case. Further, it is evaluated by the supervisor. This Cycle of speech language therapy clinical services in continuous until the therapy case has completely improved or discontinued due to various reasons. The supervisor based on overall handling of therapy sessions gives clinical ratings. Expected Solution: The process needs to become digitized with the use of software where in right from the allocation of cases, therapy related documentation by both therapist and supervisor, clinical evaluation of therapy, feedback and clinical rating can be performed.",
+  "scraped_at": "2026-09-26"
+}
